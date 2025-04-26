@@ -1,0 +1,13 @@
+# EditorConfig 配置示例
+
+# 顶级属性
+root = true
+
+# 默认缩进设置（2 个空格）
+[*]
+indent_style = space
+indent_size = 2
+
+# HTML 文件使用 4 个空格（覆盖默认设置）
+[*.html]
+indent_size = 4

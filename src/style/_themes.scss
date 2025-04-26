@@ -1,0 +1,105 @@
+/* custom-soft-theme.scss */
+
+// 覆盖 Bootstrap 默认的 CSS 变量
+[data-bs-theme="soft"] {
+  --bs-body-bg: #f9f5ec; /* 柔和的米黄色背景 */
+  --bs-body-color: #555555; /* 深灰色文本 */
+  --bs-primary: #81c784; /* 柔和的绿色 */
+  --bs-secondary: #bdbdbd; /* 灰色 */
+  --bs-success: #aed581; /* 淡绿色 */
+  --bs-warning: #ffe082; /* 淡黄色 */
+  --bs-danger: #f48fb1; /* 淡粉色 */
+  --bs-info: #81d4fa; /* 淡蓝色 */
+  --bs-light: #fefefe; /* 浅色 */
+  --bs-dark: #333333; /* 深灰色 */
+
+  --bs-link-color: #5c6bc0; /* 柔和的蓝色 */
+  --bs-link-hover-color: #3f51b5; /* 悬停时的深蓝色 */
+
+  --bs-border-color: #eae4d3; /* 淡米色的边框 */
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.05); /* 透明的边框颜色 */
+
+  --bs-heading-color: #2c2c2c; /* 深灰色的标题 */
+  --bs-emphasis-color: #2c2c2c; /* 强调文字的颜色 */
+  --bs-muted-color: #888888; /* 淡灰色 */
+
+  --bs-secondary-color: #999999; /* 次要文本颜色 */
+  --bs-tertiary-color: #bbbbbb; /* 第三层次颜色 */
+
+  --bs-secondary-bg: #f6f6f2; /* 二级背景颜色 */
+  --bs-tertiary-bg: #f0f0e9; /* 三级背景颜色 */
+  --bs-surface-bg: #ffffff; /* 背景色 */
+
+  --bs-btn-primary-bg: #aed581; /* 主按钮的背景色 */
+  --bs-btn-primary-color: #000000; /* 主按钮的文本颜色 */
+  --bs-btn-primary-hover-bg: #9ccc65; /* 主按钮悬停时的背景色 */
+  --bs-focus-ring-color: rgba(173, 214, 125, 0.25); /* 聚焦时的环形颜色 */
+
+  --bs-code-color: #c2185b; /* 代码高亮颜色 */
+  --bs-highlight-bg: #fffde7; /* 高亮背景色 */
+
+  --bs-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.04); /* 轻微的阴影效果 */
+  --bs-hover-bg: #f0eee4; /* 悬停背景色 */
+
+  --bs-nav-link-active-bg: #e0e0e0; /* 激活的导航链接背景 */
+  --bs-nav-link-active-color: #2e2e2e; /* 激活的导航链接文字颜色 */
+}
+
+.sidebar {
+  border-right: 1px solid var(--bs-border-color);
+  .brand {
+    color: var(--bs-primary);
+    border-bottom: 1px solid var(--bs-border-color);
+    transition: border-color 0.4s ease;
+  }
+  .brand:hover {
+    border-bottom: 1px solid transparent;
+  }
+  .nav .nav-link {
+    color: rgba(var(--bs-body-color-rgb), 0.75);
+  }
+  // **侧边栏导航项**
+  .nav .nav-link.active,
+  .nav .nav-link:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.75);
+    color: var(--bs-body-color);
+  }
+  // **子菜单**
+  .nav .sub-menu .nav-link.active,
+  .nav .sub-menu .nav-link:hover {
+    background-color: transparent;
+    color: var(--bs-nav-link-color);
+  }
+}
+
+.toolbar {
+  border-bottom: 1px solid var(--bs-border-color);
+  .btn {
+    font-size: 0.875rem;
+    color: var(--bs-body-color);
+    &:hover {
+      background-color: var(--bs-tertiary-bg);
+    }
+  }
+  .left-group .btn {
+    &:not(:last-child) > span {
+      border-right: 1px solid var(--bs-border-color);
+    }
+  }
+  // **工具栏下拉菜单**
+  .dropdown {
+    .btn.dropdown-toggle.show {
+      background-color: var(--bs-tertiary-bg);
+    }
+
+    .dropdown-menu {
+      .dropdown-item {
+        font-size: 0.875rem;
+        color: var(--bs-body-color);
+        &:hover {
+          background-color: var(--bs-body-bg);
+        }
+      }
+    }
+  }
+}

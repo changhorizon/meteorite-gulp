@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            (function () {
+                const valid = ["light", "dark", "soft"];
+                const saved = localStorage.getItem("theme-mode");
+                const mode = valid.includes(saved) ? saved : "light";
+                document.documentElement.setAttribute("data-bs-theme", mode);
+            })();
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{title}}</title>
+        <meta name="description" content="{{description}}" />
+        <meta name="generator" content="{{generator}}" />
+        <meta name="author" content="{{author}}" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+        <link rel="manifest" href="webmanifest" />
+        <link rel="stylesheet" href="css/main.min.css" />
+    </head>
+    <body>
+        {{include 'blocks/sidebar.html'}} {{include 'blocks/toolbar.html'}}
+        <!-- 主內容區 -->
+        <div
+            id="main"
+            class="main d-flex flex-column justify-content-between"
+            tabindex="1"
+        >
+            <div class="content p-3">{{block 'content'}}{{/block}}</div>
+            <footer id="footer" class="border-top mt-3">
+                <div class="container my-2">
+                    <p class="text-center m-0">
+                        Adminify ©2025, 由 Hizpark 提供支持
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

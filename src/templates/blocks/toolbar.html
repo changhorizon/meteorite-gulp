@@ -1,0 +1,98 @@
+<!-- 工具欄 -->
+<nav id="toolbar" class="toolbar">
+    <!-- 左側按鈕組 -->
+    <div class="btn-group left-group">
+        <button class="btn" id="sidebar-toggle">
+            <span
+                class="d-flex justify-content-center align-items-center h-100 w-100 px-3"
+            >
+                <i class="bi bi-layout-text-sidebar"></i>
+            </span>
+        </button>
+        <a class="btn link" href="https://www.example.com" target="_blank">
+            <span
+                class="d-flex justify-content-center align-items-center h-100 w-100 px-3"
+            >
+                查看站點
+            </span>
+        </a>
+    </div>
+
+    <!-- 右側按鈕組 -->
+    <div class="ms-auto d-flex align-items-center">
+        <div class="dropdown" id="theme-mode-toggle">
+            <button
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span
+                    class="d-flex justify-content-center align-items-center h-100 w-100 px-3"
+                >
+                    <i class="bi bi-sun"></i>
+                </span>
+            </button>
+            <ul class="dropdown-menu bg-body-tertiary border-0">
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)">
+                        <i class="bi bi-sun"></i>
+                        <span>Light</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)">
+                        <i class="bi bi-cloud"></i>
+                        <span>Soft</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)">
+                        <i class="bi bi-moon"></i>
+                        <span>Dark</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span
+                    class="d-flex justify-content-center align-items-center h-100 w-100 px-3"
+                >
+                    <i class="bi bi-globe"></i>
+                </span>
+            </button>
+            <ul class="dropdown-menu bg-body-tertiary border-0">
+                <li>
+                    <a class="dropdown-item" href="/en">英文</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="/zh">中文</a>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span
+                    class="d-flex justify-content-center align-items-center h-100 w-100 px-3"
+                    ><i class="bi bi-person-circle"></i
+                ></span>
+            </button>
+            <ul class="dropdown-menu bg-body-tertiary border-0">
+                <li>
+                    <span class="dropdown-item">Hi, User</span>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
