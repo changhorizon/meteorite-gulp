@@ -25,6 +25,10 @@ It was designed to simplify the development workflow of traditional admin system
 - **Theme Modes**
   Supports **Light**, **Soft**, and **Dark** themes for different UI preferences.
 
+## ⚙️ Prerequisites
+
+- Node.js **18.x** (tested with 18.20.8)
+
 ## 📦 Installation
 
 Make sure you have **Node.js** and **npm** installed, then install dependencies:
