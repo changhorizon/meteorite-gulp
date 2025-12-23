@@ -10,8 +10,6 @@ It was designed to simplify the development workflow of traditional admin system
 > ⚠️ This project represents an **early-generation frontend stack** and is no longer actively maintained.
 > It is preserved for historical reference and learning purposes.
 
----
-
 ## ✨ Features
 
 - **Quick Start**
@@ -26,8 +24,6 @@ It was designed to simplify the development workflow of traditional admin system
 - **Theme Modes**
   Supports **Light**, **Soft**, and **Dark** themes for different UI preferences.
 
----
-
 ## 📦 Installation
 
 Make sure you have **Node.js** and **npm** installed, then install dependencies:
@@ -37,8 +33,6 @@ npm install
 ```
 
 This installs all required packages listed in `package.json`, including **Gulp**, **Art-Template**, **Bootstrap**, and **Bootstrap Icons**.
-
----
 
 ## 🚀 Getting Started
 
@@ -53,8 +47,6 @@ This command will:
 - Build project assets
 - Start a local development server
 - Watch for file changes and reload automatically
-
----
 
 ## 🔨 Build Process
 
@@ -73,8 +65,6 @@ You will see logs similar to:
 ...
 ```
 
----
-
 ## 🙏 Acknowledgments
 
 This project is built upon the following open-source tools:
@@ -84,9 +74,6 @@ This project is built upon the following open-source tools:
 - **[Bootstrap](https://getbootstrap.com/)** – Popular UI framework
 - **[Bootstrap Icons](https://icons.getbootstrap.com/)** – Open-source icon library
 
----
-
 ## 📝 License
 
-MIT License.
-See the [LICENSE](LICENSE) file for details.
+MIT License. See the [LICENSE](LICENSE) file for details.
